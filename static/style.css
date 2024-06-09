@@ -1,0 +1,134 @@
+body {
+    height: 100%; 
+    margin: 0;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: "Kaushan Script", cursive;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-right: 60px;
+}
+
+button.login {
+    background-color: #0d6eff;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid;
+}
+
+button.login:hover {
+    background-color: #0555ab;
+}
+
+.feature-header {
+    background-color: #2c354a;
+}
+
+div h1 {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+div a {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+button.learnmore {
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4991d4;
+    border: none;
+    border-radius: 25px;
+    width: 140px;
+    height: 50px;
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+button.learnmore:hover {
+    background-color: #acc6f2;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.securitymanager {
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+
+.main-services {
+    margin: 20px auto 30px auto;
+}
+
+.main-services .col img {
+    margin-bottom: 0px;
+}
+
+a .learnmorecard  {
+    background-color: #0555ab;
+}
+
+h5 {
+    color: #bfbfbf;
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+}
+
+footer {
+    background-color: #2c354a;
+    align-items: center;
+}
+
+.footermenu .faq {
+    text-align: right;
+}
+
+.footermenu .contact {
+    text-align: center;
+}
+
+.footermenu .policies {
+    text-align: left;
+}
+
+.footermenu a {
+    margin-left: 30px; 
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-fluid {
+    border-radius: 25px;
+}

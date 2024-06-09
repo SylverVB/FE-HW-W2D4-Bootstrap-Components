@@ -1,0 +1,169 @@
+<!-- Lesson 4: Assignments | Bootstrap Components
+
+Problem Statement: Bootstrap offers a wide range of components to streamline web development and improve user experience. Your task is to 
+integrate Bootstrap components into an existing web project, focusing on navigation, visual enhancements, and interactive elements.
+
+Task 1: Implement a Responsive Navigation Bar component into your "Tech Solutions" webpage to create a responsive navigation bar that collapses 
+into a toggleable menu on smaller screens.
+
+Expected Outcome: A responsive navigation bar that adjusts its layout and appearance based on the screen size, providing easy access to 
+different sections of the website.
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+</nav>
+  
+Task 2: Enhance Visual Appeal with Bootstrap Cards Replace Services Section standard HTML elements with Bootstrap Cards to showcase content in 
+a visually appealing manner with consistent styling.
+
+<div class="card">
+
+</div>
+
+Expected Outcome: Content displayed within visually appealing Bootstrap Cards, featuring consistent styling and improved presentation on the web page.
+
+Task 3: Add Dynamic Interactivity with Bootstrap Buttons Incorporate Bootstrap Buttons with interactive hover effects to enhance user engagement and 
+provide visual feedback when interacting with clickable elements.
+
+<button type="button" class="btn btn-primary">Click Me</button>
+
+Expected Outcome: Buttons on the web page that change appearance or color when hovered over, providing dynamic visual feedback to users and improving interactivity. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Tech services website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fira+Code:wght@300..700&family=Fira+Mono:wght@400;500;700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Tech Solutions</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./static/images/logo.png" alt="logo" class="d-inline-block align-text-top" style="height: 70px; margin-right: 10px;">
+                    <span style="color: #c40c0c;">Tech</span> Solutions
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">WHY TECH SOLUTIONS?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><button class="btn btn-primary rounded-pill login">LOGIN</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container-fluid flex-grow-1 px-0 mx-0 d-flex flex-column">
+            <div class="row feature-header text-center text-md-start">
+                <div class="col-12 col-md col-xxl d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-lg-end px-md-5 me-md-3 feature">
+                    <h1 class="automation text-center text-lg-start mb-md-1">Automation to accelerate sales and delivery of Tech Solutions security services</h1>
+                    <a href="#" class="text-lg-start alearnmore"><button class="btn btn-light learnmore mt-1 mt-md-3">LEARN MORE</button></a>
+                </div>
+                <div class="col-12 col-md col-xxl flex-column d-none d-md-flex justify-content-center align-items-center align-items-lg-start px-0 feautre-image">
+                    <img src="./static/images/solution.png" alt="solution" class="techmicrosoft">
+                </div>
+            </div>
+            <h2 class="row justify-content-center align-items-center my-4 services">Tech Solutions Automation Platform Services</h2>
+            <div class="row main-services text-center">
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./static/images/CloudMigration-Icon.svg" class="card-img-top" alt="Migrations" style="height: 208px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Start Right</h5>
+                            <h3 class="card-subtitle mb-2 text-muted">MIGRATIONS</h3>
+                            <p class="card-text">Project automation makes migrations safer and easier</p>
+                            <a href="#" class="btn btn-primary mt-auto rounded-pill">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./static/images/ProtectData-Icon.svg" class="card-img-top" alt="Cloud Backup" style="height: 208px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Protect Data</h5>
+                            <h3 class="card-subtitle mb-2 text-muted">CLOUD BACKUP</h3>
+                            <p class="card-text">Unlimited backup, easy setup, and one-click restore</p>
+                            <a href="#" class="btn btn-primary mt-auto rounded-pill learnmorecard">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./static/images/cloud-manager-logo-icon.svg" class="card-img-top" alt="Cloud Manager" style="height: 208px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Optimize Operations</h5>
+                            <h3 class="card-subtitle mb-2 text-muted">CLOUD MANAGER</h3>
+                            <p class="card-text">Secure and manage SaaS, PaaS, and IaaS services</p>
+                            <a href="#" class="btn btn-primary mt-auto rounded-pill">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./static/images/security-manager-logo-icon-new.svg" class="card-img-top" alt="Security Manager" style="height: 208px; object-fit: contain">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Accelerate Security</h5>
+                            <h3 class="card-subtitle mb-2 text-muted">SECURITY MANAGER</h3>
+                            <p class="card-text">Easily deliver and monetize our product security</p>
+                            <a href="#" class="btn btn-primary mt-auto rounded-pill">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container-fluid align-items-center">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                    <div id="logo">
+                        <img class="img-fluid" src="./static/images/logo.png" alt="logo style=" style="height: 80px; margin-right: 10px;">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center my-3 footermenu">
+                    <a href="#" class="faq">FAQs</a>
+                    <a href="#" class="contact">Contact</a>
+                    <a href="#" class="policies">Policies</a>
+                </div>
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center socialnetworks">
+                    <div class="instagram-image">
+                        <img src="./static/images/image 5.png" alt="instagram icon">
+                    </div>
+                    <div class="facebook-image">
+                        <img src="./static/images/image 7.png" alt="facebook icon">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
